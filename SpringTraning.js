@@ -1,5 +1,4 @@
-'use strict';
-/*jshint esversion: 6 */
+"use strict";
 
 // hackerrank question
 // Complete the SprintTraining function below.
