@@ -7,7 +7,7 @@ function theLoveLetterMystery(s) {
     let changeCount = 0;
     let len = s.length;
     for(let i=0; i<parseInt(len/2); i++){
-      changeCount += Math.abs(s.charCodeAt(i) - s.charCodeAt(len-i-1))
+      changeCount += Math.abs(s.charCodeAt(i) - s.charCodeAt(len-i-1));
     }
     return changeCount;
   }
