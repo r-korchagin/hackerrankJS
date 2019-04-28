@@ -14,5 +14,5 @@ function findDigits(n) {
             .length;
 }
 
-console.log(findDigits(24)); // Ecpected 2
-console.log(findDigits(122)); // Ecpected 3
+console.log(findDigits(24)); // Expected 2
+console.log(findDigits(122)); // Expected 3
