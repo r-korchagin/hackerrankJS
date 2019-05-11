@@ -33,7 +33,7 @@ function bomberMan(n, grid) {
     if ((n-3)%4 + 3 === 5){
         for (let k = 0; k < 2; k++) {
             blank = grid.map(v=>'O'.repeat(v.length).split(''));
-            grid.forEach((v,i)=>{
+            grid.forEach((v,i)=>{ // jshint ignore:line
                 for (let j = 0; j < v.length; j++) {
                     if (v.charAt(j)=='O'){
                         if (i!==0) blank[i-1][j] = '.';
