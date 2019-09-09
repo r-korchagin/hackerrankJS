@@ -10,12 +10,14 @@
  */
 function binaryGap(N) {
     if ( typeof(N) !== 'number' ) return 0;
-    return Math.max(0, ...(N >>> 0)
+    return Math
+        .max(0, ...(N >>> 0)
         .toString(2)
         .split('1')
         .map(v => v.length)
         .slice(1,-1) );
 }
+
 
 // Scenarios:
 // N = 9 (1001), Expected = 2
@@ -30,7 +32,10 @@ function binaryGap(N) {
 // N = "A" (null), Expected = 0
 // N = null (null), Expected = 0
 // N = [blank] (null), Expected = 0binaryGap(9); // 2 ✅
+
+console.log( binaryGap(66561) ); // 9 ✅
 console.log( binaryGap(529) ); // 4 ✅
+console.log( binaryGap(1610612737) ); // 28 ✅
 console.log( binaryGap(51272) ); // 4 ✅
 console.log( binaryGap(15) ); // 0 ✅
 console.log( binaryGap(53) ); // 1 ✅
@@ -40,4 +45,4 @@ console.log( binaryGap(0) ); // 0 ✅
 console.log( binaryGap(-1) ); // 0 ✅
 console.log( binaryGap("A") ); // 0 ✅
 console.log( binaryGap(null) ); // 0 ✅
-console.log( binaryGap() ); // 0 ✅
+console.log( binaryGap() ); // 0 ✅*/
